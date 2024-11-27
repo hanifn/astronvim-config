@@ -7,6 +7,7 @@ return {
         -- first key is the mode
         n = {
           -- hop-nvim mappings
+          ["<Leader><Leader>"] = { desc = "Hop" },
           ["<Leader><Leader>w"] = {
             function() require("hop").hint_words { direction = require("hop.hint").HintDirection.AFTER_CURSOR } end,
             desc = "Hop forwards to start of word",
