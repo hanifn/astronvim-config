@@ -16,6 +16,10 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.proto" },
+  { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.recipes.neovide" },
@@ -27,4 +31,6 @@ return {
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.test.neotest" },
+  { import = "astrocommunity.utility.hover-nvim" },
+  { import = "astrocommunity.docker.lazydocker" },
 }
