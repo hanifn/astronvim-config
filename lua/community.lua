@@ -32,5 +32,6 @@ return {
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.utility.hover-nvim" },
+  { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.docker.lazydocker" },
 }
