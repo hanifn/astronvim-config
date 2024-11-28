@@ -103,6 +103,60 @@ return {
             desc = "Until previous occurance of character in line",
           },
         },
+        i = { -- insert mode
+          -- hop-nvim mappings
+          ["<Leader><Leader>"] = { desc = "Hop" },
+          ["<Leader><Leader>w"] = {
+            function() require("hop").hint_words { direction = require("hop.hint").HintDirection.AFTER_CURSOR } end,
+            desc = "Hop forwards to start of word",
+          },
+          ["<Leader><Leader>b"] = {
+            function() require("hop").hint_words { direction = require("hop.hint").HintDirection.BEFORE_CURSOR } end,
+            desc = "Hop backwards to start of word",
+          },
+          ["<Leader><Leader><Leader>bdw"] = {
+            function() require("hop").hint_words() end,
+            desc = "Hop to start of word everywhere",
+          },
+          ["<Leader><Leader>e"] = {
+            function()
+              require("hop").hint_words {
+                direction = require("hop.hint").HintDirection.AFTER_CURSOR,
+                hint_position = require("hop.hint").HintPosition.END,
+              }
+            end,
+            desc = "Hop forwards to end of word",
+          },
+          ["<Leader><Leader>ge"] = {
+            function()
+              require("hop").hint_words {
+                direction = require("hop.hint").HintDirection.AFTER_CURSOR,
+                hint_position = require("hop.hint").HintPosition.END,
+              }
+            end,
+            desc = "Hop backwards to end of word",
+          },
+          ["<Leader><Leader><Leader>bde"] = {
+            function() require("hop").hint_words { hint_position = require("hop.hint").HintPosition.END } end,
+            desc = "Hop forwards to end of word",
+          },
+          ["<Leader><Leader>j"] = {
+            function()
+              require("hop").hint_lines_skip_whitespace { direction = require("hop.hint").HintDirection.AFTER_CURSOR }
+            end,
+            desc = "Hop down to line",
+          },
+          ["<Leader><Leader>k"] = {
+            function()
+              require("hop").hint_lines_skip_whitespace { direction = require("hop.hint").HintDirection.BEFORE_CURSOR }
+            end,
+            desc = "Hop up to line",
+          },
+          ["<Leader><Leader>/"] = {
+            function() require("hop").hint_patterns() end,
+            desc = "Hop to search pattern",
+          },
+        },
       },
     },
   },
