@@ -35,4 +35,7 @@ return {
   { import = "astrocommunity.utility.hover-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.docker.lazydocker" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  { import = "astrocommunity.note-taking.obsidian-nvim" },
+  { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
 }
