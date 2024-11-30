@@ -27,7 +27,6 @@ return {
   { import = "astrocommunity.motion.hop-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.scrolling.cinnamon-nvim" },
-  { import = "astrocommunity.completion.copilot-cmp" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.file-explorer.telescope-file-browser-nvim" },
   { import = "astrocommunity.git.blame-nvim" },
