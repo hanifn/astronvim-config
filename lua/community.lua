@@ -37,4 +37,6 @@ return {
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.note-taking.obsidian-nvim" },
   { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
+  { import = "astrocommunity.editing-support.chatgpt-nvim" },
+  { import = "astrocommunity.media.image-nvim" },
 }
