@@ -73,7 +73,7 @@ return {
       view_options = {
         show_hidden = true,
         natural_order = true,
-        is_always_hidden = function(name, _) return name == ".." or name == ".DS_store" end,
+        is_always_hidden = function(name, _) return name == ".." or name == ".DS_Store" end,
       },
       float = {
         padding = 2,
