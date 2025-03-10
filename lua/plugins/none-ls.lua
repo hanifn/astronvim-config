@@ -1,11 +1,16 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize None-ls sources
 
 ---@type LazySpec
 return {
   "nvimtools/none-ls.nvim",
   opts = function(_, opts)
+    local wp = require "wordpress"
+    local lspconfig = require "lspconfig"
+    local null_ls = require "null-ls"
+
+    -- setup intelephense for PHP, WordPress and WooCommerce development
+    lspconfig.intelephense.setup(wp.intelephense)
+
     -- opts variable is the default configuration table for the setup function call
     -- local null_ls = require "null-ls"
 
@@ -19,6 +24,8 @@ return {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,
       -- null_ls.builtins.formatting.prettier,
+      null_ls.builtins.diagnostics.phpcs.with(wp.null_ls_phpcs),
+      null_ls.builtins.formatting.phpcbf.with(wp.null_ls_phpcs),
     })
   end,
 }
